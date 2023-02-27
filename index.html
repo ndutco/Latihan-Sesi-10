@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Data Covid 19</title>
+</head>
+<body>
+    <h1>Cetak Angka Ganjil Genap</h1>
+
+<script>
+    function cekGanjilGenap(angka) {
+        if (typeof angka !== "number" || isNaN(angka)) {
+            return "Invalid Data";
+        }
+
+        if (angka % 2 === 0) {
+            return "genap";
+        } else {
+            return "ganjil"
+        }
+    }
+
+    console.log(cekGanjilGenap(4));
+    console.log(cekGanjilGenap(21));
+    console.log(cekGanjilGenap(20));
+    console.log(cekGanjilGenap(21));
+
+    console.log(cekGanjilGenap("foo"));
+    console.log(cekGanjilGenap(true));
+    console.log(cekGanjilGenap(NaN));
+</script>
+    </body>
+</html>
